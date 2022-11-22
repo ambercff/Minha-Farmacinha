@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+body{
+    background-image: url("https://images.unsplash.com/photo-1597773150796-e5c14ebecbf5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+body::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+.container{
+    padding: 50px 50px; border-radius: 10px;
+    background-color: white;
+    color: #2A2A72;
+}
+
+.logo-container {
+    display: flex; justify-content: center; align-items: center;
+
+    margin-bottom: 25px;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.formlabel{
+    position: relative;
+    margin: 25px 0;
+}
+
+label{
+    width: 100%;
+    display: block;
+}
+
+input{
+    width: 100%; padding: 3px 0;
+
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid hsl(0, 0%, 75%);
+}
+
+input:hover{
+    border-bottom: 1px solid hsl(0, 0%, 50%);
+}
+
+input:focus{
+    border-bottom: 1px solid hsl(0, 0%, 50%);
+}
+
+input:valid{
+    border-bottom: 1px solid #2A2A72;
+}
+
+.login{
+    outline: 0;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #911313;
+    color: white;
+    padding: 15px;
+    width: 110px;
+    margin-bottom: 55px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 3%);
+}
+
+.login:hover{
+    background-color: #2A2A72;
+}
+
+a{
+    text-decoration: none;
+    color:#2A2A72;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+#teste{
+    color: white;
+}
+
+.botao-container {
+    display: flex; justify-content: center; align-items: center;
+}
+.botao {
+    width: 110px; padding: 15px;
+
+    background-color: #2A2A72; 
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.else {
+    margin-top: 25px;
+    text-align: center;
+}
+
+
+
+#eye {
+    position: absolute; right: 0;
+
+    cursor: pointer;
+}

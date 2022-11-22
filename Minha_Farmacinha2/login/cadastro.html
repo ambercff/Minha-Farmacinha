@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+        <title> Cadastro </title>
+        <link rel="stylesheet" href="../css/login.css">
+    </head>
+
+    <body>
+        <form method="POST" action="../banco/cadastro_usuario.php">
+            <div class="container">
+                <div class="logo-container">
+                    <a href="../index.php"><img src="../imagens/logo.png" alt="logo" class="logo"></a>
+                </div>
+
+                <h1>Cadastre-se</h1>
+
+                <div class="formlabel">
+                    <label><i class="fas fa-envelope"></i> E-mail </label>
+                    <input type="text" required name="email">
+                </div>
+
+                <div class="formlabel">
+                    <label><i class="fas fa-lock"></i> Senha</label>
+                    <input type="password" required name="senha" id="senha"><i id="eye" class="far fa-eye" onclick="show()"></i>
+                </div>
+
+                <div class="formlabel">
+                    <label><i class="fas fa-user"></i> Nome Completo </label>
+                    <input type="text" required name="nome">
+                </div>
+
+                <div class="formlabel">
+                    <label><i class="fas fa-mobile"></i> Telefone </label>
+                    <input type="tel" required name="telefone" placeholder="(XX) 9XXXX-XXXX">
+                </div>
+
+                <div class="formlabel">
+                    <label><i class="fas fa-home"></i> CEP </label>
+                    <input type="text" required name="cep" placeholder="XXXXX-XXX">
+                </div>
+
+                <div class="formlabel">
+                    <label><i class="fas fa-portrait"></i> Foto </label>
+                    <input type="file" name="foto"> 
+                </div>
+                
+                <div class="botao-container">
+                    <button type="submit" class="botao" id="teste"> Finalizar </button>
+                </div>
+
+                <p class="else">Já tem conta na Farmonkey? <a href="../login/login.html">Entre aqui</a></p>
+            </div>
+        </form>
+
+    </body>
+
+    <script> //olhinho
+        var senha = document.getElementById("senha");
+
+        function show() {
+            if (senha.type === "password") {
+                senha.type = "text";
+
+                document.getElementsByClassName("far fa-eye")[0].className = "far fa-eye-slash";
+            } else {
+                senha.type = "password";
+
+                document.getElementsByClassName("far fa-eye-slash")[0].className = "far fa-eye";
+            }
+        }
+    </script>
+</html>

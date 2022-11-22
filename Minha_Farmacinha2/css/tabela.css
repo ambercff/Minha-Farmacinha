@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container th {
+    color: white;
+    padding: 4px;
+    text-align: left;
+    border: 1px solid black;
+    background-color: #2A2A72;
+}
+
+.container td {
+    padding: 4px;
+    border: 1px solid black;
+    background-color: #efefef;
+}
+
+.container table{
+    border-collapse: collapse;
+}
+
+.titulo th{
+    text-align: center;
+    background-color: #FFA400; 
+    color: black;
+}
+.centralizar {
+margin-left: 25%;
+margin-right: 25%;
+    
+
+}

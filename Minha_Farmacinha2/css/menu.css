@@ -1,0 +1,46 @@
+* {
+    margin: 0; padding: 0; box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+h2 {
+    font-size: 36px; font-weight: 900;
+
+    color: #0A1931;
+}
+
+.main-container {
+    max-width: 75%; margin: auto;
+}
+
+
+.botoes-container ul{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.botoes-container a{
+    margin: 10px;
+    text-decoration: none; 
+    list-style: none;
+}
+
+.botao {
+    width: 250px; padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: white; 
+    background-color: #2A2A72;
+    border: none; 
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+}
+.botao:hover, .botao:focus {
+    color: black; 
+    background-color: #FFA400;
+}

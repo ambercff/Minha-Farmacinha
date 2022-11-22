@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> FARMONKEY </title>
+        <link rel="stylesheet" href="../css/login.css">
+    </head>
+<body>
+    <form method="POST" action="../banco/cadastromed.php">
+        <div class="container">
+            <div class="logo-container">
+                <a href="#"><img src="../imagens/logo.png" alt="logo" class="logo"></a>
+            </div>
+
+            <div class="formlabel">
+            <label><i class="fas fa-briefcase-medical"></i> Digite o ID: </label>
+            <input type="text" required name="idmed">
+            </div>
+
+            <div class="formlabel">
+                <label><i class="fas fa-briefcase-medical"></i> Nome do Medicamento </label>
+                <input type="text" required name="nomemed">
+            </div>
+
+            <div class="formlabel">
+                <label><i class="fas fa-hospital"></i> Farmácia Responsável </label>
+                <input type="text" required name="farmacia">
+            </div>
+
+            <div class="formlabel">
+                <label><i class="fas fa-calendar-alt"></i> Data de Validade </label>
+                <input type="date" required name="validade">
+            </div>
+
+            <div class="formlabel">
+                <label><i class="fas fa-prescription-bottle-alt"></i> Tipo </label>
+                <input type="text" required name="tipo">
+            </div>
+
+            <div class="formlabel">
+                <label> <i class="fas fa-pencil-alt"></i> Descrição </label>
+                <input type="#" required name="descricao">
+            </div>
+
+            <div class="formlabel">
+                <label><i class="fas fa-portrait"></i> Qtd Estoque</label>
+                <input type="text" required name="estoque"> 
+            </div>
+            
+            <div class="botao-container">
+                <button type="submit" class="botao" id="teste"> Finalizar </button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
