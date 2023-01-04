@@ -1,0 +1,3 @@
+- Primeiro site desenvolvido em PHP
+- O site tem como objetivo gerenciar medicamentos. 
+- Concluído no segundo ano de curso. 
